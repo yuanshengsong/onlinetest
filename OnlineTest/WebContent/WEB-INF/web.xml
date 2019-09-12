@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>ExamOnline</servlet-name>
+    <servlet-class>cn.edu.nsu.onlinetest.servlet.ExamOline</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExamOnline</servlet-name>
+    <url-pattern>/Client/ExamOnline/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Course</servlet-name>
+    <servlet-class>cn.edu.nsu.onlinetest.servlet.Course</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Course</servlet-name>
+    <url-pattern>/Course</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Unit</servlet-name>
+    <servlet-class>cn.edu.nsu.onlinetest.servlet.Unit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Unit</servlet-name>
+    <url-pattern>/Unit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>viewservlet</servlet-name>
+  <servlet-class>cn.edu.nsu.xiaoxueqi.db.questiontype.viewservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>viewservlet</servlet-name>
+   <url-pattern>/viewservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>delservlet</servlet-name>
+  <servlet-class>cn.edu.nsu.xiaoxueqi.db.questiontype.delservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>delservlet</servlet-name>
+   <url-pattern>/delservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>addservlet</servlet-name>
+  <servlet-class>cn.edu.nsu.xiaoxueqi.db.questiontype.addservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>addservlet</servlet-name>
+   <url-pattern>/addservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>modifyservlet</servlet-name>
+  <servlet-class>cn.edu.nsu.xiaoxueqi.db.questiontype.modifyservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>modifyservlet</servlet-name>
+   <url-pattern>/modifyservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>uvservlet</servlet-name>
+  <servlet-class>cn.edu.nsu.xiaoxueqi.db.unit.uvservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>uvservlet</servlet-name>
+   <url-pattern>/uvservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>unitdelservlet</servlet-name>
+  <servlet-class>cn.edu.nsu.xiaoxueqi.db.unit.unitdelservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>unitdelservlet</servlet-name>
+   <url-pattern>/unitdelservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>unitaddservlet</servlet-name>
+  <servlet-class>cn.edu.nsu.xiaoxueqi.db.unit.unitaddservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>unitaddservlet</servlet-name>
+   <url-pattern>/unitaddservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>unitmodservlet</servlet-name>
+  <servlet-class>cn.edu.nsu.xiaoxueqi.db.unit.unitmodservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>unitmodservlet</servlet-name>
+   <url-pattern>/unitmodservlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>cn.edu.nsu.xiaoxueqi.db.test.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddTestServlet</servlet-name>
+    <servlet-class>cn.edu.nsu.xiaoxueqi.db.test.AddTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddTestServlet</servlet-name>
+    <url-pattern>/AddTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FunctionServlet</servlet-name>
+    <servlet-class>cn.edu.nsu.servlet.FunctionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FunctionServlet</servlet-name>
+    <url-pattern>/FunctionServlet/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddServlet</servlet-name>
+    <servlet-class>cn.edu.nsu.FunctionServlet.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddServlet</servlet-name>
+    <url-pattern>/AddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeletServlet</servlet-name>
+    <servlet-class>cn.edu.nsu.FunctionServlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeletServlet</servlet-name>
+    <url-pattern>/DeletServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

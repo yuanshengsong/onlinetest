@@ -1,0 +1,36 @@
+			.l-panel {
+    margin-bottom: 2%;
+    margin-left: 2%;
+    padding: 15px 30px;
+    color: #999;
+    border-radius: 5px;
+}
+
+.l-panel .row span {
+    font-size: 14px;
+}
+
+.l-panel-head {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #666;
+    border-bottom: 1px dotted #333;
+}
+
+.purpel {
+    background: #d9edf7;
+    box-shadow: 0 5px 0 #d6edf5;;
+}
+
+.l-img {
+    width: 40px;
+}
+
+.row > h5 {
+    line-height: 20px;
+}
+.green {
+    background: #dff0d8;
+    box-shadow: 0 5px 0 #dff0d6;
+}
